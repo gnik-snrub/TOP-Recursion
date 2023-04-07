@@ -6,3 +6,5 @@ const fibs = n => {
 	}
 	return result
 }
+
+const fibsRec = (n, arr = [0, 1]) => n === 2 ? arr : fibsRec(n - 1, [...arr, (arr[arr.length-1] + arr[arr.length - 2])])
